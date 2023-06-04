@@ -28,12 +28,5 @@ const contador = setInterval(() => {
 
 }, 1000);
 
-function confirmar() {
-    alert('Para bens estamos aguardo você para grande festa!')
-}
-
-function naoVou() {
-    alert('Ok tudo bem! vai perder uma ótima festa! ')
-}
 
 //finalizando contador
