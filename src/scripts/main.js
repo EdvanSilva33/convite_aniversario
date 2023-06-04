@@ -14,13 +14,13 @@ const contador = setInterval(() => {
     const minutosEms = 1000 * 60;
 
 
-    const diaDoAniversario = Math.floor( marcoTemporal / diaEmMs);
-    const horaDoAniversario = Math.floor(( marcoTemporal % diaEmMs) / horaEmMs);
+    const diaDoAniversario = Math.floor(marcoTemporal / diaEmMs);
+    const horaDoAniversario = Math.floor((marcoTemporal % diaEmMs) / horaEmMs);
     const mintutosDoAniversario = Math.floor((marcoTemporal % horaEmMs) / minutosEms);
-    const segundosDoAniversario = Math.floor((marcoTemporal %  minutosEms) / 1000);
+    const segundosDoAniversario = Math.floor((marcoTemporal % minutosEms) / 1000);
 
     document.getElementById('contagem').innerHTML = `${diaDoAniversario} dia ${horaDoAniversario}hs ${mintutosDoAniversario}Min ${segundosDoAniversario}s`;
-    if(marcoTemporal < 0 ){
+    if (marcoTemporal < 0) {
         clearInterval(contador);
         document.getElementById('contagem').innerHTML = 'Acabou o Aniversário';
 
@@ -28,10 +28,10 @@ const contador = setInterval(() => {
 
 }, 1000);
 
-function confirmar(){
+function confirmar() {
     alert('Para bens estamos aguardo você para grande festa!')
-  }
-  
-  function naoVou(){
+}
+
+function naoVou() {
     alert('Ok tudo bem! vai perder uma ótima festa! ')
-  }
+}
