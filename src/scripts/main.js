@@ -35,3 +35,5 @@ function confirmar() {
 function naoVou() {
     alert('Ok tudo bem! vai perder uma ótima festa! ')
 }
+
+//finalizando contador

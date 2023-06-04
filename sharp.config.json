@@ -1,0 +1,11 @@
+{
+    "png":
+    {
+        "quality":75
+    },
+    "jpeg":
+    {
+        "quality":70
+    }
+   
+}
