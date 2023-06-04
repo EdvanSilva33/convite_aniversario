@@ -7,16 +7,24 @@
     background-size: cover;
     background-repeat: no-repeat;
     &__folder{
+
+        margin-top: 10px;
+       
         img{
+            
             width: 100%;
             border-radius:15px;
         }
     }
    &__container{
+    position: relative;
     display: flex;
     width: 100%;
     padding: 0 5.6vw;
     align-items: center;
+    @media (max-width: 1023px) {
+        align-items: flex-start;
+    }
     justify-content: space-evenly;
     p:nth-child(1){
         line-height: 25px;
@@ -80,7 +88,7 @@
 &__button{
        h2{
            padding: 16px;
-           font-size: 40px;
+           font-size: 35px;
            @media (max-width:680px) {
             font-size: 25px;
             
