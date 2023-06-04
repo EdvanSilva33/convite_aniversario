@@ -1,13 +1,15 @@
 @use 'variable';
 .hero{
     
+   padding: 16px;
    
-   
-    background-image: variable.$backgroundHero;
+    background-image: url("../image/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     &__folder{
         img{
             width: 100%;
-            border-radius: 10px;
+            border-radius:15px;
         }
     }
    &__container{
@@ -32,6 +34,7 @@
     max-width: 800px;
     height: auto;
     padding: 16px;
+    border-radius: 45px 0 45px;
     h1{
         text-transform: uppercase;
         font-size: 40px;
@@ -75,9 +78,7 @@
             
         }
        }
-//    margin: 16px auto;
-// width: 100%;
-// max-width: 400px;
+
 display: flex;
 justify-content:space-between;
 align-items: center;
