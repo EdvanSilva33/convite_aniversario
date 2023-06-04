@@ -33,9 +33,16 @@
     height: auto;
     padding: 16px;
     h1{
+        text-transform: uppercase;
         font-size: 40px;
+        text-align: center;
         font-family: 'Caveat', cursive;
         margin-bottom: 10px;
+        @media (max-width:680px) {
+            
+            font-size: 25px;
+            
+        }
     }
     .map{
         width: 100%;
@@ -57,38 +64,42 @@
     border-radius: 15px;
     padding: 16px;
     background-color: variable.$corPaneil;
-    h2{
-        padding: 16px;
-        font-size: 40px;
-    }
-   }
-   &__button{
-   margin: 16px auto;
-width: 100%;
-max-width: 400px;
+    margin-bottom: 16px;
+}
+&__button{
+       h2{
+           padding: 16px;
+           font-size: 40px;
+           @media (max-width:680px) {
+            font-size: 25px;
+            
+        }
+       }
+//    margin: 16px auto;
+// width: 100%;
+// max-width: 400px;
 display: flex;
 justify-content:space-between;
-
-
+align-items: center;
+@media (max-width:680px) {
+    flex-direction: column;
+    
+}
 button{
     
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     border-radius: 10px;
     font-size: 18px;
     border: none;
     cursor: pointer;
+    background-color: variable.$corConfirmacion;
     @media (max-width:380px) {
         width: 140px; 
         
     }
 }
-button:nth-child(1){
-    background-color: variable.$corConfirmacion;
 
-}
-button:nth-child(2){
-    background-color: variable.$corNaoConfirmacion;
-}
+
 }
 }
