@@ -18,6 +18,14 @@
     padding: 0 5.6vw;
     align-items: center;
     justify-content: space-evenly;
+    p:nth-child(1){
+        line-height: 25px;
+    }
+    p:nth-child(2){
+        letter-spacing: 5px;
+        line-height: 25px;
+        font-weight: bold;
+    } 
     @media (max-width:768px) {
         flex-direction: column;
         align-items: center;
