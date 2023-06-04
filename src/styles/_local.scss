@@ -1,0 +1,54 @@
+@use 'variable';
+
+.local{
+    background-image: variable.$backgroundLocal;
+    padding: 5.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+    @media (max-width:780px ) {
+        flex-direction: column;
+    }
+    &__image{
+        width: 100%;
+        max-width: 600px;
+        img{
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+    &__text{
+        padding: 16px;
+        width: 100%;
+        max-width: 700px;
+        
+            @media (max-width:780px) {
+                text-align: justify;
+            }
+        
+        h3{
+            font-size: 35px;
+            border-bottom: 2px solid variable.$corSecondary;
+            margin-bottom: 16px;
+            @media (max-width:780px) {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+    &--purple{
+        background-image: variable.$backgroundLocalPurple;
+        flex-direction: row-reverse;
+        @media (max-width:780px ) {
+            flex-direction: column;
+        }
+    }
+   &--final{
+    background-image: variable.$backgroundLocalfinal;
+    @media (max-width:780px ) {
+        flex-direction: column;
+    }
+   }
+}

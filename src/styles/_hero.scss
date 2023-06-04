@@ -1,0 +1,94 @@
+@use 'variable';
+.hero{
+    
+   
+   
+    background-image: variable.$backgroundHero;
+    &__folder{
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+   &__container{
+    display: flex;
+    width: 100%;
+    padding: 0 5.6vw;
+    align-items: center;
+    justify-content: space-evenly;
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    
+
+   }
+   &__informe{
+    margin:16px 40px;
+    background-color: variable.$corQuadro;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 16px;
+    h1{
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        margin-bottom: 10px;
+    }
+    .map{
+        width: 100%;
+       
+        height: auto;
+       
+        margin-top: 10px;
+        padding: 10px;
+        
+        iframe{
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            
+        }
+    }
+   }
+   &__content{
+    border-radius: 15px;
+    padding: 16px;
+    background-color: variable.$corPaneil;
+    h2{
+        padding: 16px;
+        font-size: 40px;
+    }
+   }
+   &__button{
+   margin: 16px auto;
+width: 100%;
+max-width: 400px;
+display: flex;
+justify-content:space-between;
+
+
+button{
+    
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    @media (max-width:380px) {
+        width: 140px; 
+        
+    }
+}
+button:nth-child(1){
+    background-color: variable.$corConfirmacion;
+
+}
+button:nth-child(2){
+    background-color: variable.$corNaoConfirmacion;
+}
+}
+}

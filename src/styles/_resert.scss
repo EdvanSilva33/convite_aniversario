@@ -1,0 +1,12 @@
+@use 'variable';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: variable.$corSecondary;
+}
+// font-family: 'Caveat', cursive;
+
