@@ -1,6 +1,6 @@
 AOS.init();
 
-const aniversario = new Date('sept 14, 2023 19:00:00');
+const aniversario = new Date('sept 14, 2026 19:00:00');
 const diaAniversario = aniversario.getTime();
 
 const contador = setInterval(() => {
